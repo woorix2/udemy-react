@@ -3,7 +3,11 @@ import "./ExpensesList.css";
 
 const ExpensesList = (props) => {
   if (props.items.length === 0) {
-    return <h2 className="expenses-list__fallback">Found no expenses.</h2>;
+    return (
+      <h2 className="expenses-list__fallback">
+        해당연도에 소비 항목이 없습니다.
+      </h2>
+    );
   }
 
   return (
